@@ -6,7 +6,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
   margin: 0 auto;
-  width: 80%;
+  width: 50%;
   min-width: 300px;
   height: 1000px;
 }
@@ -31,10 +31,7 @@ legend {
   font-weight: bold;
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-}
+
 
 input[type=text], input[type=number], select {
   width: 100%;
@@ -72,4 +69,26 @@ button[type=submit]:hover {
   border-radius: 5px;
   padding: 20px;
   font-size: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* styles for devices with a maximum width of 600px (typically mobile phones) */
+  body {
+    font-size: 50px; /* increase font size */
+  }
+  /* adjust other styles as needed */
+}
+/* Set default font-size for labels */
+label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  /* Increase font-size for labels */
+  label {
+    font-size: 20px;
+  }
 }
