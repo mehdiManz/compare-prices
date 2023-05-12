@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Compare Prices</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Compare Prices</h1>
+  <form>
+    <fieldset>
+      <legend>Good 1</legend>
+      <div>
+        <label for="good1-name">Name:</label>
+        <input type="text" id="good1-name" required>
+      </div>
+      <div>
+        <label for="good1-price">Price:</label>
+        <input type="number" id="good1-price" step="0.01" min="0" required>
+      </div>
+      <div>
+        <label for="good1-measure">Measure:</label>
+        <select id="good1-measure" required>
+          <option value="counts">Counts</option>
+          <option value="weight">Weight (kg)</option>
+          <option value="pounds">Weight (lb)</option>
+        </select>
+      </div>
+      <div id="good1-weight-div">
+        <label for="good1-weight">Weight:</label>
+        <input type="number" id="good1-weight" step="0.01" min="0">
+      </div>
+      <div>
+       
+        
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Good 2</legend>
+      <div>
+        <label for="good2-name">Name:</label>
+        <input type="text" id="good2-name" required>
+      </div>
+      <div>
+        <label for="good2-price">Price:</label>
+        <input type="number" id="good2-price" step="0.01" min="0" required>
+      </div>
+      <div>
+        <label for="good2-measure">Measure:</label>
+        <select id="good2-measure" required>
+          <option value="counts">Counts</option>
+          <option value="weight">Weight (kg)</option>
+          <option value="pounds">Weight (lb)</option>
+        </select>
+      </div>
+      <div id="good2-weight-div">
+        <label for="good2-weight">Weight:</label>
+        <input type="number" id="good2-weight" step="0.01" min="0">
+      </div>
+      <div>
+       
+      
+      </div>
+    </fieldset>
+
+    <button type="submit">Compare</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
